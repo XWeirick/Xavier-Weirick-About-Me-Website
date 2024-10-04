@@ -6,9 +6,6 @@ p {
   font: normal 18px/1.6 "Helvetica", Arial, sans-serif; 
   color: #464646; 
 }
-.id { 
-  margin-bottom 15px:
-}
 
 #img { 
   border: none 
@@ -16,7 +13,7 @@ p {
 .org { 
   color: #54ba6a; 
   text-decoration: underline; 
-
+}
 a { 
   color: #68c6b8; 
 }
