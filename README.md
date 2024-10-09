@@ -1,3 +1,3 @@
-[About Me](Ch2Xavier.html)
+[About Me](index.html)
 
-[About My Dog Max](Ch2Max.html)
+[About My Dog Max](DogMax.html)
