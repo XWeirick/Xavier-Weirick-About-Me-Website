@@ -1,0 +1,31 @@
+/* Universal Selector */
+/* Hopefully the grey background saves your eyes */
+* {
+  color: rgb(255, 255, 255); 
+  background-color: rgb(128, 128, 128);
+}
+
+/* Type Selector */
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* ID Selector */
+#index_goals {
+  font-size: 18px;
+}
+
+/* Class Selector */
+.heading_class {
+  font-family: 'Trebuchet MS';
+  font-weight: 300;
+  color: rgb(0, 255, 255);
+}
+
+/* Relational Selector */
+main li { font-size: 90%; }
+
+/* Pseudo-class(es) */
+:active {
+  color: rgb(128, 0, 128);
+}
