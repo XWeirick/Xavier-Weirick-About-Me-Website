@@ -5,6 +5,7 @@
 <head>
     <meta description="Everything you ever wanted to know about my dog named Max.">
     <title>Info page of my dog Max</title>
+    <link rel="stylesheet" href="dogStyle.css">
 </head>
 
 <body>
@@ -12,24 +13,41 @@
         <h1>Max is my dog</h1>
     </header>
     <main> <!--Most information that I know about my dog-->
-        <h2>Facts about Max</h2>
+        <section id="facts">
+            <h2>Facts about Max</h2>
+            <ul>
+                <li>He's about 70 pounds.</li>
+                <li>He was adopted in Tacoma by my parents and I.</li>
+                <li>He is the runt of his litter</li>
+                <li>He's about <em>6</em> years old.</li>
+                <li>He's a golden retriever.</li>
+            </ul>
+        </section>
+        <section id="bestdog">
+            <h2>Why I think Max is the best dog ever</h2>
+            <p>He may not be the most perfect dog, and he might be a little goofy at times, but he <br>
+                always brings happiness to my family and I. That's all he needs to do for him to be <br>
+                the best, nothing more.</p>
+        </section>
+        <section id="golden">
+            <img src="images/goldenretriever.jpg" width="350px" alt="Image of a Golden Retriever"> <br>
+            (Not my dog, just some golden I found on google)
+        </section>
+        <br>
+        <section id="whatmaxdoes">
+        <h2>What Max Like's to Do During The Day</h2>
         <ul>
-            <li>He's about 70 pounds.</li>
-            <li>He was adopted in Tacoma by my parents and I.</li>
-            <li>He is the runt of his litter</li>
-            <li>He's about <em>6</em> years old.</li>
-            <li>He's a golden retriever.</li>
+            <li>Sit at the top of the stairs and bark at people that pass the house</li>
+            <li>Chasing the rabbits in the backyard</li>
+            <li>Beg everyone in the house to play with him</li>
         </ul>
-        <img src="images/goldenretriever.jpg" width="350px" alt="Image of a Golden Retriever"> <br>
-        (Not actually my dog, just some golden I found on google)
-        <h3>Why I think Max is the best dog ever</h3>
-        <p>He may not be the most perfect dog, and he might be a little goofy at times, but he <br>
-        always brings happiness to my family and I. That's all he needs to do for him to be <br>
-         the best, nothing more.</p>
+        </section>
     </main>
-    <!--Link back to main page-->
-    <a href="index.html">Back to main page</a>
-    <footer>&copy; Copyright 2024 Xavier Weirick</footer>
+    <section id="footer">
+        <!--Link back to main page-->
+        <a href="index.html">Back to main page</a>
+        <footer>&copy; Copyright 2024 Xavier Weirick</footer>
+    </section>
 </body>
 
 </html>

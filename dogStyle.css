@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255); 
+    background-color: rgb(128, 128, 128);
+  }
+  
+  /* Type Selector */
+  body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 2em 2em;
+  }
+
+  br {
+    clear: both;
+  }
+
+  h1 {
+    font-size: 48px;
+    padding: 0em 0em 1em 0em;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: cyan;
+  }
+
+  img {
+    border: 1px solid white;
+  }
+  
+  #facts {
+    float: left;
+    width: 450px;
+  }
+
+  #bestdog {
+    float:  left;
+    width: 550px;
+    padding: 0em 0em 3em 0em;
+  }
+
+  #golden {
+    float: right 1em;
+    width: 350px;
+  }
+
+  #whatmaxdoes {
+    float: left;
+    padding: 0em 0em 0em 0em;
+  }
+
+  #footer {
+    clear: both;
+    padding: 2em 0em 0em 0em;
+  }

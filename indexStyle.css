@@ -1,18 +1,35 @@
 /* Universal Selector */
 /* Hopefully the grey background saves your eyes */
 * {
+  margin: 0;
+  padding: 0;
   color: rgb(255, 255, 255); 
   background-color: rgb(128, 128, 128);
+  background: url(images/logan.jpg) no-repeat;
+/* For context, this is a picture of my friend Logan, not me */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Type Selector */
 body {
   font-family:'Times New Roman', Times, serif;
+  background-image: linear-gradient(90deg, red 11%, green 55%, blue 150%);
+  margin: 1em 1em;
+  padding: 45em;
+}
+
+h1 {
+  font-size: 300%;
 }
 
 /* ID Selector */
 #index_goals {
   font-size: 18px;
+  margin: 5em;
+  border: thick dashed darkgoldenrod;
+  border-width: 3px 25px;
+  border-radius: 5px;
 }
 
 /* Class Selector */
@@ -20,6 +37,7 @@ body {
   font-family: 'Trebuchet MS';
   font-weight: 300;
   color: rgb(0, 255, 255);
+  padding: 5em;
 }
 
 /* Relational Selector */
