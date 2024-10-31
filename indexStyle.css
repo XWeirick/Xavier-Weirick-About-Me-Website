@@ -5,31 +5,47 @@
   padding: 0;
   color: rgb(255, 255, 255); 
   background-color: rgb(128, 128, 128);
-  background: url(images/logan.jpg) no-repeat;
-/* For context, this is a picture of my friend Logan, not me */
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 /* Type Selector */
 body {
   font-family:'Times New Roman', Times, serif;
-  background-image: linear-gradient(90deg, red 11%, green 55%, blue 150%);
   margin: 1em 1em;
-  padding: 45em;
+  padding: 1em;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 225%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+h3 {
+  font-size: 125%;
+}
+
+#aboutme {
+  padding: 1em 0em 1em 0em;
+}
+
+#hobbies {
+  padding: 1em 0em 1em 0em;
+}
+
+#favoritegames {
+  padding: 1em 0em 1em 0em;
+}
+
+#goals {
+  padding: 1em 0em 1em 0em;
 }
 
 /* ID Selector */
 #index_goals {
   font-size: 18px;
-  margin: 5em;
-  border: thick dashed darkgoldenrod;
-  border-width: 3px 25px;
-  border-radius: 5px;
+  padding: 1em 0em 1em 0em;
 }
 
 /* Class Selector */
@@ -37,7 +53,6 @@ h1 {
   font-family: 'Trebuchet MS';
   font-weight: 300;
   color: rgb(0, 255, 255);
-  padding: 5em;
 }
 
 /* Relational Selector */
