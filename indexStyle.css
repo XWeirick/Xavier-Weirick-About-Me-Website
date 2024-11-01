@@ -67,7 +67,7 @@ main li {
 
 /* Pseudo-class(es) */
 :link {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
 :visited {
@@ -112,8 +112,9 @@ main li {
 footer {
   padding-top: 2em;
   clear: left;
-  
+
+  /* I added this to seperate external links and placeholder links*/
   :visited {
-     color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
 }
