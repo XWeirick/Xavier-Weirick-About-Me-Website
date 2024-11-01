@@ -1,5 +1,3 @@
-/* Universal Selector */
-/* Hopefully the grey background saves your eyes */
 * {
   margin: 0;
   padding: 0;
@@ -10,59 +8,50 @@
 /* Type Selector */
 body {
   font-family: 'Times New Roman', Times, serif;
-  margin: 1em 1em;
-  padding: 1em;
+  margin: 2em 2em;
+}
+
+br {
+  clear: both;
 }
 
 h1 {
-  font-size: 225%;
+  font-size: 48px;
+  padding: 0em 0em 1em 0em;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 32px;
+  color: cyan;
 }
 
-h3 {
-  font-size: 125%;
+img {
+  border: 1px solid white;
 }
 
-#aboutme {
-  padding: 1em 0em 1em 0em;
+#facts {
+  float: left;
+  width: 450px;
 }
 
-#hobbies {
-  padding: 1em 0em 1em 0em;
+#bestdog {
+  float: left;
+  width: 550px;
+  padding: 0em 0em 3em 0em;
 }
 
-#favoritegames {
-  padding: 1em 0em 1em 0em;
+#golden {
+  float: right 1em;
+  width: 350px;
 }
 
-#goals {
-  padding: 1em 0em 1em 0em;
+#whatmaxdoes {
+  float: left;
 }
 
-/* ID Selector */
-#index_goals {
-  font-size: 18px;
-  padding: 1em 0em 1em 0em;
-}
-
-/* Class Selector */
-.heading_class {
-  font-family: 'Trebuchet MS';
-  font-weight: 300;
-  color: rgb(0, 255, 255);
-}
-
-/* Relational Selector */
-main li {
-  font-size: 100%;
-}
-
-/* Pseudo-class(es) */
-:active {
-  color: rgb(128, 0, 128);
+#footer {
+  clear: both;
+  padding: 2em 0em 0em 0em;
 }
 
 /* Navigation Menu */
