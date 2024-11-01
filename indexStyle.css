@@ -42,6 +42,11 @@ h3 {
   padding: 1em 0em 1em 0em;
 }
 
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
 /* ID Selector */
 #index_goals {
   font-size: 18px;
@@ -61,16 +66,19 @@ main li {
 }
 
 /* Pseudo-class(es) */
-:active {
+:link {
+  color: rgb(255,255,255);
+}
+
+:visited {
   color: rgb(128, 0, 128);
 }
 
 /* Navigation Menu */
 
 #nav_menu {
-  padding-top: 2em;
+  padding-top: 1em;
   margin: auto;
-  width: 600px;
 }
 
 #nav_menu ul {
@@ -90,7 +98,7 @@ main li {
   background-color: rgb(0, 255, 255);
   color: rgb(128, 128, 128);
   font-weight: bold;
-  border-right: 2px solid white;
+  border-right: 2px solid rgb(128, 128, 128);
 }
 
 #nav_menu ul li a.lastitem {
@@ -102,5 +110,10 @@ main li {
 }
 
 footer {
+  padding-top: 2em;
   clear: left;
+  
+  :visited {
+     color:rgb(255, 255, 255);
+  }
 }

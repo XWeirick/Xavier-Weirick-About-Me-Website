@@ -54,12 +54,19 @@ img {
   padding: 2em 0em 0em 0em;
 }
 
+:link {
+  color: rgb(255, 255, 255);
+}
+
+:visited {
+  color: rgb(128, 0, 128);
+}
+
 /* Navigation Menu */
 
 #nav_menu {
   padding-top: 2em;
   margin: auto;
-  width: 600px;
 }
 
 #nav_menu ul {
@@ -79,7 +86,7 @@ img {
   background-color: rgb(0, 255, 255);
   color: rgb(128, 128, 128);
   font-weight: bold;
-  border-right: 2px solid white;
+  border-right: 2px solid rgb(128, 128, 128);
 }
 
 #nav_menu ul li a.lastitem {
@@ -92,4 +99,5 @@ img {
 
 footer {
   clear: left;
+  padding-top: 2em;
 }
