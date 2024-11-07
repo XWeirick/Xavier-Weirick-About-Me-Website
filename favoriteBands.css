@@ -3,54 +3,122 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
+  }
+  
+  html {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 255, 255) 100%);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  /* Type Selector */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    text-align: left;
+    width: 90%;
+    max-width: 1024px;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: thin solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     background-color: rgb(128, 128, 128);
-}
-
-/* Type Selector */
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 1em 1em;
-    padding: 1em;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 225%;
-}
-
-h2 {
+    padding: 0em 0em 0.5em 0em;
+  }
+  
+  h2 {
     font-size: 175%;
-}
-
-h3 {
+    padding: 0em 0em 0.5em 0em;
+  }
+  
+  h3 {
     font-size: 125%;
-}
-
-/* Pseudo-class(es) */
-:link {
+    padding: 0em 0em 0.5em 0em;
+  }
+  
+  #aboutme {
+    padding: 1em 0em 1em 0em;
+    max-width: 500px;
+  }
+  
+  #hobbies {
+    padding: 1em 0em 1em 0em;
+    max-width: 500px;
+  }
+  
+  #favoritegames {
+    padding: 1em 0em 1em 0em;
+    max-width: 500px;
+  }
+  
+  #musicgenres {
+    padding: 1em 0em 1em 0em;
+    max-width: 500px;
+  }
+  
+  #goals {
+    padding: 1em 0em 1em 0em;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1em;
+  }
+  
+  /* ID Selector */
+  #index_goals {
+    font-size: 18px;
+    padding: 1em 0em 1em 0em;
+  }
+  
+  /* Class Selector */
+  .heading_class {
+    font-family: 'Trebuchet MS';
+    font-weight: 300;
+    color: rgb(0, 255, 255);
+  }
+  
+  /* Relational Selector */
+  main li {
+    font-size: 100%;
+  }
+  
+  /* Pseudo-class(es) */
+  :link {
     color: rgb(255, 255, 255);
-}
-
-:visited {
+  }
+  
+  :visited {
     color: rgb(128, 0, 128);
-}
-
-/* Navigation Menu */
-
-#nav_menu {
-    padding-top: 2em;
-    margin: auto;
-}
-
-#nav_menu ul {
+  }
+  
+  /* Navigation Menu */
+  
+  #nav_menu {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin: 15px auto;
+  }
+  
+  #nav_menu ul {
     list-style-type: none;
-}
-
-#nav_menu ul li {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #nav_menu ul li {
     float: left;
-}
-
-#nav_menu ul li a {
+  }
+  
+  #nav_menu ul li a {
     text-align: center;
     display: block;
     width: 175px;
@@ -60,17 +128,22 @@ h3 {
     color: rgb(128, 128, 128);
     font-weight: bold;
     border-right: 2px solid rgb(128, 128, 128);
-}
-
-#nav_menu ul li a.lastitem {
+  }
+  
+  #nav_menu ul li a.lastitem {
     border-right: none;
-}
-
-#nav_menu ul li a.current {
+  }
+  
+  #nav_menu ul li a.current {
     color: yellow;
-}
-
-footer {
-    clear: left;
+  }
+  
+  footer {
     padding-top: 2em;
-}
+    clear: both;
+  
+    /* I added this to seperate external links and placeholder links*/
+    :visited {
+      color: rgb(255, 255, 255);
+    }
+  }

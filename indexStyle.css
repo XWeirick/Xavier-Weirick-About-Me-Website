@@ -3,48 +3,86 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128);
+  font-size: 100%;
+}
+
+html {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 255, 255) 100%);
+}
+
+header {
+  text-align: center;
 }
 
 /* Type Selector */
 body {
   font-family: 'Times New Roman', Times, serif;
-  margin: 1em 1em;
-  padding: 1em;
+  font-size: 110%;
+  text-align: left;
+  width: 90%;
+  max-width: 1024px;
+  margin: 15px auto;
+  padding: 15px 1.5em;
+  border: thin solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 128, 128);
 }
 
 h1 {
-  font-size: 225%;
+  font-size: 250%;
+  padding: 0em 0em 0.25em 0em;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 200%;
+  padding: 0em 0em 0.5em 0em;
 }
 
 h3 {
-  font-size: 125%;
+  font-size: 175%;
+  padding: 0em 0em 0.5em 0em;
 }
 
 #aboutme {
   padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #hobbies {
   padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #favoritegames {
   padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#musicgenres {
+  padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #goals {
   padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 img {
-  max-width: 100%;
-  margin-bottom: 1em;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  border: thin solid rgb(255, 255, 255);
+}
+
+#songlink {
+  text-align: center;
 }
 
 /* ID Selector */
@@ -78,11 +116,14 @@ main li {
 
 #nav_menu {
   padding-top: 1em;
-  margin: auto;
+  padding-bottom: 2em;
+  margin: 15px auto;
 }
 
 #nav_menu ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 #nav_menu ul li {
@@ -111,7 +152,7 @@ main li {
 
 footer {
   padding-top: 2em;
-  clear: left;
+  clear: both;
 
   /* I added this to seperate external links and placeholder links*/
   :visited {

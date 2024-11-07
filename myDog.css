@@ -1,14 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128);
+  text-align: left;
+  font-size: 100%;
+}
+
+html {
+  background-image: linear-gradient(to bottom, black 0%, cyan 100%);
 }
 
 /* Type Selector */
 body {
   font-family: 'Times New Roman', Times, serif;
-  margin: 2em 2em;
+  font-size: 110%;
+  text-align: left;
+  width: 90%;
+  max-width: 960px;
+  margin: 15px auto;
+  padding: 15px 1.5em;
+  border: thin solid white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 128, 128);
 }
 
 br {
@@ -16,13 +28,13 @@ br {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 250%;
   padding: 0em 0em 1em 0em;
 }
 
 h2 {
-  font-size: 32px;
-  color: cyan;
+  font-size: 200%;
+  padding: 0em 0em 1em 0em;
 }
 
 img {
@@ -31,27 +43,52 @@ img {
 
 #facts {
   float: left;
-  width: 450px;
+  width: 350px;
+  padding: 1em 0em 3em 0em;
+  margin: 0 auto;
 }
 
 #bestdog {
   float: left;
-  width: 550px;
-  padding: 0em 0em 3em 0em;
+  width: 610px;
+  padding: 1em 0em 3em 0em;
+  margin: 0 auto;
 }
 
 #golden {
+  display: block;
+  margin: 0 auto;
   float: right 1em;
   width: 350px;
 }
 
 #whatmaxdoes {
-  float: left;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1em 0em 3em 0em;
 }
 
-#footer {
+#favoritetreats {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1em 0em 3em 0em;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
   clear: both;
   padding: 2em 0em 0em 0em;
+}
+
+.heading_class {
+  font-family: 'Trebuchet MS';
+  font-weight: 300;
+  color: rgb(0, 255, 255);
 }
 
 :link {
@@ -65,12 +102,15 @@ img {
 /* Navigation Menu */
 
 #nav_menu {
-  padding-top: 2em;
-  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin: 15px auto;
 }
 
 #nav_menu ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 #nav_menu ul li {
