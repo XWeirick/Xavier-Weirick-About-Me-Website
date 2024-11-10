@@ -16,9 +16,10 @@ header {
 
 #bandsintro {
   text-align: left;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 1em 1em 1em;
   max-width: 550px;
   margin: 0 auto;
+  border: thin solid rgb(255, 255, 255);
 }
 
 /* Type Selector */
