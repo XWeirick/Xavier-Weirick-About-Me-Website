@@ -94,6 +94,13 @@ img {
   margin: 0 auto;
 }
 
+#sleeptoken {
+  text-align: left;
+  padding: 1em 0em 1em 2em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 /* Pseudo-class(es) */
 :link {
   color: rgb(255, 255, 255);
