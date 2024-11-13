@@ -1,3 +1,4 @@
+/* Universal Selector */
 * {
   margin: 0;
   padding: 0;
@@ -29,37 +30,47 @@ br {
 
 h1 {
   font-size: 250%;
-  padding: 0em 0em 1em 0em;
+  padding-bottom: 1em;
 }
 
 h2 {
   font-size: 200%;
-  padding: 0em 0em 1em 0em;
+  padding-bottom: 1em;
 }
 
 img {
-  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  border: thin solid rgb(255, 255, 255);
+}
+
+div#flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1em;
+  padding-bottom: 3em;
 }
 
 #facts {
   float: left;
-  width: 350px;
-  padding: 1em 0em 3em 0em;
-  margin: 0 auto;
+  max-width: 350px;
+  margin-right: 0.5em;
 }
 
 #bestdog {
-  float: left;
-  width: 610px;
-  padding: 1em 0em 3em 0em;
-  margin: 0 auto;
+  float: right;
+  max-width: 610px;
+  margin-left: 0.5em;
 }
 
 #golden {
   display: block;
   margin: 0 auto;
   float: right 1em;
-  width: 350px;
+  max-width: 350px;
 }
 
 #whatmaxdoes {
@@ -82,7 +93,7 @@ header {
 
 footer {
   clear: both;
-  padding: 2em 0em 0em 0em;
+  padding-top: 2em;
 }
 
 .heading_class {
@@ -140,4 +151,111 @@ footer {
 footer {
   clear: left;
   padding-top: 2em;
+}
+
+/* Media Queries */
+
+/* Fixes the flex container to change the flex-direction from row to column, 
+as well as recentering the items to fit onto the screen from <997 px*/
+@media only screen and (max-width: 997px) {
+  div#flex1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-570 pixels */
+@media only screen and (max-width: 570px) {
+  #nav_menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #nav_menu ul li {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(0, 255, 255);
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(128, 128, 128);
+  }
+}
+
+/* Prevents any text breaking between 804 and 631 pixels */
+@media only screen and (max-width: 804px) {
+  #bestdog {
+    float: right;
+    max-width: 550px;
+    margin-left: 0.5em;
+  }
+
+  #whatmaxdoes {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 1em 0em 3em 0em;
+  }
+  
+  #favoritetreats {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 1em 0em 3em 0em;
+  }
+}
+
+/* Prevents any text breaking between 631 and 546 pixels */
+@media only screen and (max-width: 631px) {
+  #bestdog {
+    float: right;
+    max-width: 475px;
+    margin-left: 0.5em;
+  }
+
+  #whatmaxdoes {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 475px;
+    padding: 1em 0em 3em 0em;
+  }
+  
+  #favoritetreats {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 475px;
+    padding: 1em 0em 3em 0em;
+  }
+}
+
+/* Prevents any text breaking between 546 and 360 pixels */
+@media only screen and (max-width: 631px) {
+  #bestdog {
+    float: right;
+    max-width: 300px;
+    margin-left: 0.5em;
+  }
+
+  #whatmaxdoes {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1em 0em 3em 0em;
+  }
+  
+  #favoritetreats {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1em 0em 3em 0em;
+  }
 }
