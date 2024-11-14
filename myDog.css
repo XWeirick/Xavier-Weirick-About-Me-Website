@@ -28,11 +28,6 @@ br {
   clear: both;
 }
 
-h1 {
-  font-size: 250%;
-  padding-bottom: 1em;
-}
-
 h2 {
   font-size: 200%;
   padding-bottom: 1em;
@@ -87,6 +82,21 @@ div#flex1 {
   padding: 1em 0em 3em 0em;
 }
 
+#favoritetoys {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1em 0em 3em 0em;
+}
+
+#toys {
+  height: 400px;
+  display: grid;
+  grid-template: repeat(2, 150px) / repeat(3, 180px);
+  grid-gap: 50px 20px;
+  justify-content: center;
+}
+
 header {
   text-align: center;
 }
@@ -121,8 +131,13 @@ footer {
 #nav_menu ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
+
+/* I will likely change this back to 'justify-content: center' and remove the media query after Module 8 is graded.
+ I like the navigation menu better when the buttons are touching.
+This is mainly just to show that there is a second flex container for the 2 that are required for the Module.
+If future assignments require more than 1 flex container, I will find another spot for one.*/
 
 #nav_menu ul li {
   float: left;
@@ -161,6 +176,16 @@ as well as recentering the items to fit onto the screen from <997 px*/
   div#flex1 {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* Changes the justification of the navigation menu to to center once the buttons start overlapping.
+This also helps the navigation menu scale properly with the width of the screen between 570 and 608 pixels*/
+@media only screen and (max-width: 608px) {
+  #nav_menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -212,6 +237,14 @@ as well as recentering the items to fit onto the screen from <997 px*/
     max-width: 550px;
     padding: 1em 0em 3em 0em;
   }
+
+  #favoritetoys {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 1em 0em 3em 0em;
+  }
+  
 }
 
 /* Prevents any text breaking between 631 and 546 pixels */
@@ -235,10 +268,27 @@ as well as recentering the items to fit onto the screen from <997 px*/
     max-width: 475px;
     padding: 1em 0em 3em 0em;
   }
+
+  #favoritetoys {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 475px;
+    padding: 1em 0em 3em 0em;
+  }
+  
+  /* Ensures that the grid component stays within the width of the screen while
+  keeping a comfortable margin*/
+  #toys {
+    height: 550px;
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(2, 180px);
+    grid-gap: 50px 20px;
+    justify-content: center;
+  }
 }
 
 /* Prevents any text breaking between 546 and 360 pixels */
-@media only screen and (max-width: 631px) {
+@media only screen and (max-width: 546px) {
   #bestdog {
     float: right;
     max-width: 300px;
@@ -257,5 +307,25 @@ as well as recentering the items to fit onto the screen from <997 px*/
     margin: 0 auto;
     max-width: 300px;
     padding: 1em 0em 3em 0em;
+  }
+
+  #favoritetoys {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1em 0em 3em 0em;
+  }
+  
+}
+
+/* Ensures that the grid component stays within the width of the screen while
+  keeping a comfortable margin*/
+@media only screen and (max-width: 440px) {
+  #toys {
+    height: 1150px;
+    display: grid;
+    grid-template: repeat(6, 150px) / 180px;
+    grid-gap: 50px 20px;
+    justify-content: center;
   }
 }

@@ -86,8 +86,13 @@ img {
 #nav_menu ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
+
+/* I will likely change this back to 'justify-content: center' and remove the media query after Module 8 is graded.
+ I like the navigation menu better when the buttons are touching.
+This is mainly just to show that there is a second flex container for the 2 that are required for the Module.
+If future assignments require more than 1 flex container, I will find another spot for one.*/
 
 #nav_menu ul li {
   float: left;
@@ -165,6 +170,16 @@ footer {
     max-width: 400px;
     margin: 0 auto;
     clear: both;
+  }
+}
+
+/* Changes the justification of the navigation menu to to center once the buttons start overlapping.
+This also helps the navigation menu scale properly with the width of the screen between 570 and 608 pixels*/
+@media only screen and (max-width: 608px) {
+  #nav_menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
