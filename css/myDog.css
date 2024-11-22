@@ -10,6 +10,11 @@ html {
   background-image: linear-gradient(to bottom, black 0%, cyan 100%);
 }
 
+header {
+  text-align: center;
+  font-size: 150%;
+}
+
 /* Type Selector */
 body {
   font-family: 'Times New Roman', Times, serif;
@@ -19,9 +24,9 @@ body {
   max-width: 960px;
   margin: 15px auto;
   padding: 15px 1.5em;
-  border: thin solid white;
+  border: thin solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(66, 66, 66);
 }
 
 br {
@@ -53,6 +58,12 @@ div#flex1 {
   float: left;
   max-width: 350px;
   margin-right: 0.5em;
+}
+
+/* Removes the default bullet point style for the unordered list */
+ul.list2 {
+  list-style: none;
+  padding-left: 0;
 }
 
 #bestdog {
@@ -97,13 +108,18 @@ div#flex1 {
   justify-content: center;
 }
 
-header {
-  text-align: center;
-}
-
 footer {
-  clear: both;
   padding-top: 2em;
+  clear: both;
+
+  /* I added this to seperate external links and placeholder links*/
+  :link {
+    color: rgb(255, 255, 255);
+  }
+
+  :visited {
+    color: rgb(255, 255, 255);
+  }
 }
 
 .heading_class {
@@ -113,9 +129,10 @@ footer {
 }
 
 :link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 255);
 }
 
+/* I changed the visited link color from the default purple that way the words are still readable on the dark background*/
 :visited {
   color: rgb(0, 255, 255);
 }
@@ -131,13 +148,8 @@ footer {
 #nav_menu ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-
-/* I will likely change this back to 'justify-content: center' and remove the media query after Module 8 is graded.
- I like the navigation menu better when the buttons are touching.
-This is mainly just to show that there is a second flex container for the 2 that are required for the Module.
-If future assignments require more than 1 flex container, I will find another spot for one.*/
 
 #nav_menu ul li {
   float: left;
@@ -179,18 +191,8 @@ as well as recentering the items to fit onto the screen from <997 px*/
   }
 }
 
-/* Changes the justification of the navigation menu to to center once the buttons start overlapping.
-This also helps the navigation menu scale properly with the width of the screen between 570 and 608 pixels*/
-@media only screen and (max-width: 608px) {
-  #nav_menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-570 pixels */
-@media only screen and (max-width: 570px) {
+/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-750 pixels */
+@media only screen and (max-width: 750px) {
   #nav_menu ul {
     list-style-type: none;
     display: flex;
@@ -230,7 +232,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 550px;
     padding: 1em 0em 3em 0em;
   }
-  
+
   #favoritetreats {
     text-align: center;
     margin: 0 auto;
@@ -244,7 +246,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 550px;
     padding: 1em 0em 3em 0em;
   }
-  
+
 }
 
 /* Prevents any text breaking between 631 and 546 pixels */
@@ -261,7 +263,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 475px;
     padding: 1em 0em 3em 0em;
   }
-  
+
   #favoritetreats {
     text-align: center;
     margin: 0 auto;
@@ -275,7 +277,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 475px;
     padding: 1em 0em 3em 0em;
   }
-  
+
   /* Ensures that the grid component stays within the width of the screen while
   keeping a comfortable margin*/
   #toys {
@@ -301,7 +303,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 300px;
     padding: 1em 0em 3em 0em;
   }
-  
+
   #favoritetreats {
     text-align: center;
     margin: 0 auto;
@@ -315,7 +317,7 @@ This also helps the navigation menu scale properly with the width of the screen 
     max-width: 300px;
     padding: 1em 0em 3em 0em;
   }
-  
+
 }
 
 /* Ensures that the grid component stays within the width of the screen while

@@ -11,6 +11,7 @@ html {
 
 header {
   text-align: center;
+  font-size: 150%;
 }
 
 #bandsintro {
@@ -32,7 +33,7 @@ body {
   padding: 15px 1.5em;
   border: thin solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(66, 66, 66);
 }
 
 h2 {
@@ -68,9 +69,10 @@ img {
 
 /* Pseudo-class(es) */
 :link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 255);
 }
 
+/* I changed the visited link color from the default purple that way the words are still readable on the dark background*/
 :visited {
   color: rgb(0, 255, 255);
 }
@@ -86,13 +88,8 @@ img {
 #nav_menu ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-
-/* I will likely change this back to 'justify-content: center' and remove the media query after Module 8 is graded.
- I like the navigation menu better when the buttons are touching.
-This is mainly just to show that there is a second flex container for the 2 that are required for the Module.
-If future assignments require more than 1 flex container, I will find another spot for one.*/
 
 #nav_menu ul li {
   float: left;
@@ -123,6 +120,10 @@ footer {
   clear: both;
 
   /* I added this to seperate external links and placeholder links*/
+  :link {
+    color: rgb(255, 255, 255);
+  }
+
   :visited {
     color: rgb(255, 255, 255);
   }
@@ -173,18 +174,8 @@ footer {
   }
 }
 
-/* Changes the justification of the navigation menu to to center once the buttons start overlapping.
-This also helps the navigation menu scale properly with the width of the screen between 570 and 608 pixels*/
-@media only screen and (max-width: 608px) {
-  #nav_menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-570 pixels */
-@media only screen and (max-width: 570px) {
+/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-750 pixels */
+@media only screen and (max-width: 750px) {
   #nav_menu ul {
     list-style-type: none;
     display: flex;

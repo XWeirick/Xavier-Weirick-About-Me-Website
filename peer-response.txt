@@ -1,0 +1,16 @@
+Peer suggestion #1:
+
+"I would change the color of the background slightly, it makes it tricky to read in some spots as the background is gray and the text is white on my screen"
+
+Peer suggestion #2:
+
+"The title is small, it needs to be bigger to be more easily readable"
+
+Change for Suggestion #1:
+I made the background color slightly darker (from 128,128,128 to 66,66,66). 
+Originally, I had the thought that most people would prefer a darker background to make it easier on the eyes, 
+but I will likely have to change it to dark text over a light background to follow Typographical guidelines.
+
+Change for Suggestion #2:
+I have bolded and increased the font size for the header across all pages to 150% of the universal font size to make it easier to read. 
+Might increase to around 175% when/if I get more feedback. 

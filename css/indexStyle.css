@@ -12,6 +12,7 @@ html {
 
 header {
   text-align: center;
+  font-size: 150%;
 }
 
 /* Type Selector */
@@ -25,7 +26,7 @@ body {
   padding: 15px 1.5em;
   border: thin solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(66, 66, 66);
 }
 
 h1 {
@@ -49,22 +50,16 @@ h3 {
   margin: 0 auto;
 }
 
-#hobbies {
+#funfacts {
   padding: 1em 0em 1em 0em;
   max-width: 500px;
   margin: 0 auto;
 }
 
-#favoritegames {
-  padding: 1em 0em 1em 0em;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-#musicgenres {
-  padding: 1em 0em 1em 0em;
-  max-width: 500px;
-  margin: 0 auto;
+/* Removes the default bullet point style for the unordered list */
+ul.list1 {
+  list-style: none;
+  padding-left: 0;
 }
 
 #goals {
@@ -82,8 +77,12 @@ img {
   border: thin solid rgb(255, 255, 255);
 }
 
-#songlink {
-  text-align: center;
+#index_goals {
+  /* Google Font special font requirement for Module 9 */
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: initial;
+  font-style: normal;
 }
 
 /* Class Selector */
@@ -100,9 +99,10 @@ main li {
 
 /* Pseudo-class(es) */
 :link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 255, 255);
 }
 
+/* I changed the visited link color from the default purple that way the words are still readable on the dark background*/
 :visited {
   color: rgb(0, 255, 255);
 }
@@ -118,13 +118,8 @@ main li {
 #nav_menu ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-
-/* I will likely change this back to 'justify-content: center' and remove the media query after Module 8 is graded.
- I like the navigation menu better when the buttons are touching.
-This is mainly just to show that there is a second flex container for the 2 that are required for the Module.
-If future assignments require more than 1 flex container, I will find another spot for one.*/
 
 #nav_menu ul li {
   float: left;
@@ -155,6 +150,10 @@ footer {
   clear: both;
 
   /* I added this to seperate external links and placeholder links*/
+  :link {
+    color: rgb(255, 255, 255);
+  }
+
   :visited {
     color: rgb(255, 255, 255);
   }
@@ -162,19 +161,8 @@ footer {
 
 /* Media Queries */
 
-/* Changes the justification of the navigation menu to to center once the buttons start overlapping.
-This also helps the navigation menu scale properly with the width of the screen between 571 and 608 pixels*/
-@media only screen and (max-width: 608px) {
-  #nav_menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* Fixes the navigation menu from a row of buttons to a column in order to fit within 360-571 pixels,
-and also prevents any text breaking between 360 and 571 pixels*/
-@media only screen and (max-width: 571px) {
+/**/
+@media only screen and (max-width: 750px) {
   #nav_menu ul {
     list-style-type: none;
     display: flex;
@@ -198,8 +186,17 @@ and also prevents any text breaking between 360 and 571 pixels*/
     font-weight: bold;
     border-bottom: 2px solid rgb(128, 128, 128);
   }
+}
 
+/* Prevents any text breaking between 360 and 570 pixels*/
+@media only screen and (max-width: 570px) {
   #aboutme {
+    padding: 1em 0em 1em 0em;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #funfacts {
     padding: 1em 0em 1em 0em;
     max-width: 300px;
     margin: 0 auto;
