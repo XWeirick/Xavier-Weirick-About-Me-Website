@@ -29,19 +29,20 @@ body {
   background-color: rgb(66, 66, 66);
 }
 
+h1 h2 h3 {
+  padding-bottom: 0.75em;
+}
+
 h1 {
   font-size: 250%;
-  padding: 0em 0em 0.25em 0em;
 }
 
 h2 {
   font-size: 200%;
-  padding: 0em 0em 0.5em 0em;
 }
 
 h3 {
   font-size: 175%;
-  padding: 0em 0em 0.5em 0em;
 }
 
 #aboutme {
@@ -50,10 +51,13 @@ h3 {
   margin: 0 auto;
 }
 
-#funfacts {
+#education {
   padding: 1em 0em 1em 0em;
   max-width: 500px;
   margin: 0 auto;
+  img {
+    margin-top: 0.5em;
+  }
 }
 
 /* Removes the default bullet point style for the unordered list */
@@ -62,11 +66,38 @@ ul.list1 {
   padding-left: 0;
 }
 
-#goals {
-  font-size: 18px;
+#funfacts {
   padding: 1em 0em 1em 0em;
   max-width: 500px;
   margin: 0 auto;
+}
+
+ul.list2 {
+  list-style: none;
+  padding-left: 0;
+}
+
+#favoritefood {
+  padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
+  img {
+    max-width: 75%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+ul.list3 {
+  list-style: none;
+  padding-left: 0;
+}
+
+#goals {
+  padding: 1em 0em 1em 0em;
+  max-width: 500px;
+  margin: 0 auto;
+  clear: both;
 }
 
 img {
@@ -161,7 +192,7 @@ footer {
 
 /* Media Queries */
 
-/**/
+/* Prevents the navigation menu from going off screen when the screen width is at 750px or less*/
 @media only screen and (max-width: 750px) {
   #nav_menu ul {
     list-style-type: none;

@@ -53,6 +53,9 @@ h3 {
     padding: 1em 0em 1em 0em;
     max-width: 500px;
     margin: 0 auto;
+    img {
+        margin-top: 0.5em;
+    }
 }
 
 #musicgenres {
