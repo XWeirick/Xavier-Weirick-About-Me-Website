@@ -1,5 +1,7 @@
 [About Me](index.html)
 
-[About My Dog Max](DogMax.html)
+[My Hobbies](myHobbies.html)
+
+[About My Dog](myDog.html)
 
 [Favorite Bands](favoriteBands.html)
