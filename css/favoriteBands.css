@@ -45,26 +45,28 @@ h2 {
   clear: both;
 }
 
-h3 {
-  font-size: 125%;
-  padding: 0em 0em 0.5em 0em;
-}
-
 img {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 300px;
-  float: left;
   border: thin solid rgb(255, 255, 255);
 }
 
 /* Class Selector */
 .description_class {
   text-align: left;
-  padding: 1em 0em 1em 2em;
+  padding: 1em 2em 1em 2em;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.leftimg {
+  float: left;
+}
+
+.rightimg {
+  float: right;
 }
 
 /* Pseudo-class(es) */
@@ -132,7 +134,7 @@ footer {
 /* Media Queries */
 
 /* This query clears the descriptions of each band under the images to prevent the text from breaking*/
-@media only screen and (max-width: 1095px) {
+@media only screen and (max-width: 1130px) {
   .description_class {
     text-align: left;
     padding: 1em 0em 1em 0em;
@@ -147,8 +149,15 @@ footer {
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
-    float: none;
     border: thin solid rgb(255, 255, 255);
+  }
+
+  .leftimg {
+    float: none;
+  }
+
+  .rightimg {
+    float: none;
   }
 }
 
